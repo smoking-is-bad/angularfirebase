@@ -19,6 +19,6 @@ export const appConfig: ApplicationConfig = {
       provideStorage(() => getStorage()),
       provideMessaging(() => getMessaging())
     ),
-    provideRouter(routes)
+    provideRouter(routes), provideFirebaseApp(() => initializeApp({"projectId":"friendlychat-18d30","appId":"1:1048826450455:web:35928d8ee7e155d1c2c252","databaseURL":"https://friendlychat-18d30-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"friendlychat-18d30.appspot.com","locationId":"asia-southeast1","apiKey":"AIzaSyBK23UrzojqTRxaEDfpaTVBP75jwTbNjxc","authDomain":"friendlychat-18d30.firebaseapp.com","messagingSenderId":"1048826450455"})), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideMessaging(() => getMessaging()), provideStorage(() => getStorage())
   ],
 };
