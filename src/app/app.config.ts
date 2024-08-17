@@ -8,6 +8,7 @@ import { provideMessaging, getMessaging } from '@angular/fire/messaging';
 import { provideStorage, getStorage, connectStorageEmulator } from '@angular/fire/storage';
 import { routes } from './app.routes';
 import { provideRouter } from '@angular/router';
+import { config } from 'rxjs';
 
 export const appConfig: ApplicationConfig = {
   providers: [
